@@ -9,6 +9,8 @@ Here you’ll see the basics of a Mozzi program, and you might notice it has a s
 
 If all’s well, you should hear a sine wave at 440 Hz. If you have no sound, check your volume, connections, and that the sketch has uploaded successfully. If you’ve had some success, we’d recommend at this point that you take a look at some of the other examples the Mozzi library has to offer. This will give you an idea of what it’s capable of, but bear in mind that some examples expect extra hardware.
 
+![Connections](images/basicconnection.svg)
+
 ## Digital to Analogue with PWM
 
 You might have realised that we are using pin 9, a digital pin, to do the job of an analogue output – how does this work? We are using pulse-width modulation (PWM). Simply put, if we want to approximate 2.5 V with a 5 V digital output, we switch the digital pin high for 50% of the time. 1 V would be 20%, 2 V 40%, and so on. 

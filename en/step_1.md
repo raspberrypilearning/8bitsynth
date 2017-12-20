@@ -1,25 +1,9 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+So, you’ve got your first Arduino, and you’ve tried a few basic projects. Maybe you’ve got an LED blinking and now you’re struggling to find a project that’s a little more creative. Look no further, we’ve got you covered! You may have achieved some basic bleeps and bloops with the built in Tone() function, but we’ll be doing some much more advanced digital synthesis. 
 
-### What you will make
+Digital synthesizers are very different from their analogue counterparts. Instead of a complex collection of diodes, amplifiers, oscillators, and other esoteric audio electronics, they mainly use processing power to generate waveforms and effects. Digital synths have other benefits too, but their main strength is that once set up, they’re extremely reconfigurable; you don’t need to rebuild your synth to change its sound, just reprogram it. 
 
-Add something here to showcase here, for example:
+Throughout this tutorial we’ll be using the Mozzi library to create a variety of sounds. The library is capable of generating complex waveforms, audio effects, and playing short samples, all from the modest hardware in an Arduino. We’ll be using it to create a basic FM (frequency modulation) synthesizer.
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
-
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
-
-### What you will learn
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
-
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level){:target="_blank"}
-
-### Additional information for educators
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
-
-Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
+![Mozzi Synth](images/synth1.png)

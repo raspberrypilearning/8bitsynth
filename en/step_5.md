@@ -39,7 +39,7 @@ This line may look confusing, but it’s very similar to multiplying the output 
 
 --- collapse ---
 ---
-title: >> and <<
+title: Bitshift
 ---
 The >> and << symbols are called bitshift operators, and they are a very fast way of dividing or multiplying by 2. The >>8 is a little like saying divide by 2, 8 times. If our volume value was 200, you could think of this line as Output × (200/256).  
 --- /collapse ---

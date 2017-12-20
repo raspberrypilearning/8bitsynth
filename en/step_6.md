@@ -1,6 +1,10 @@
 
 ## More control
-So perhaps you’ve played that for a while and become bored already. This was bound to happen – it’s only a simple synthesizer. Let’s try adding another sine wave oscillator, and another potentiometer to control it. To add another potentiometer, you can repeat the connection pattern as before, with our middle wiper pin wired to A2 on the Arduino. We already have the sine wave lookup table we need, so we can do this simply by duplicating the line:
+So perhaps you’ve played that for a while and become bored already. This was bound to happen – it’s only a simple synthesizer. Let’s try adding another sine wave oscillator, and another potentiometer to control it. To add another potentiometer, you can repeat the connection pattern as before, with our middle wiper pin wired to A2 on the Arduino. 
+
+![final schematic](images/schematic.png)
+
+We already have the sine wave lookup table we need, so we can do this simply by duplicating the line:
 
 ```
 Oscil <SIN2048_NUM_CELLS, AUDIO_RATE> aSin(SIN2048_DATA);

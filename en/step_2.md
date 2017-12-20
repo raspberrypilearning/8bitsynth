@@ -2,12 +2,8 @@
 
 ### Hardware
 
-+ List hardware here, or delete section.
+An Arduino (Preferably Uno, although others are possible) 
+Breadboard 470Ω resistor 
+Tactile button 
+4 × 10kΩ linear potentiometers (usually marked B10K)
 
-### Software
-
-+ List software here, or delete section.
-
-### Additional Resources
-
-+ List additional resources, or delete section.

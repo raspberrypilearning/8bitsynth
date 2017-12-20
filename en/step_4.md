@@ -16,11 +16,13 @@ When we need them, we can simply ‘look them up’, hence the name lookup table
 Oscil <SIN2048_NUM_CELLS, AUDIO_RATE> aSin(SIN2048_DATA);
 ```
 
+
 This is a little like saying, “Create a sine wave oscillator called aSin, using the table I mentioned before.” We also have the line:
 
 ```
 #define CONTROL_RATE 64 
 ```
+
 
 Which means we intend to update our controls (our potentiometers and buttons) 64 times per second. Mozzi asks for control rates to be powers of two (e.g. 2, 4, 8, 16, …) 
 

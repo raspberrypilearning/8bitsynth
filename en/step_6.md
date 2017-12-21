@@ -51,7 +51,7 @@ To develop the synth further, we’ll introduce frequency modulation (FM). This 
 
 We’ll also be making some changes to our hardware: adding another potentiometer; and introducing a push button to trigger the audio. 
 
-If you make these changes to the circuit, and upload the code from < https://hsmag.cc/JPNNBP>, you should have yourself an FM synthesizer!
+If you make these changes to the circuit, and upload the code from <resources/Issue1-synth-Code.zip>, you should have yourself an FM synthesizer!
 
 The magic happens in two lines. This one, in updateControl(): 
 

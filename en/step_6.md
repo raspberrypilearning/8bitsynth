@@ -73,9 +73,9 @@ So, you should have a basic 8-bit synthesizer, but more importantly, an idea of 
 ---
 title: Other Arduino audio projects
 ---
-* **ElectroSmash PedalShield**: This is a kit designed to sit on top of an Arduino Due and turn it into a general-purpose guitar effects pedal. It has some basic examples available, and a forum with many more. Electrosmash.com/pedalshield
-* **Ardutouch**: International hacker Mitch Altman has created an Arduino-based synth project called Ardutouch, built on a fantastic library by himself and Bill Alessi. The library by itself is great to mess around with, although it may require an experienced Arduino user. cornfieldelectronics.com/cfe/projects.php
-* **Teensy Audio Board**: This hardware for the Teensy 3.1/3.2 and the accompanying audio library get an honourable mention simply because it’s so fully featured. Not strictly Arduino, but Arduino-like. pjrc.com/teensy/td_libs_Audio.html
-* There are many more useful libraries in the Arduino Library List ( <http://playground.arduino.cc/Main/LibraryList> ) under the ‘audio’ section.
+- **ElectroSmash PedalShield**: This is a kit designed to sit on top of an Arduino Due and turn it into a general-purpose guitar effects pedal. It has some basic examples available, and a forum with many more. [electrosmash.com/pedalshield](https://www.electrosmash.com/pedalshield){:target="_blank"}
+- **Ardutouch**: International hacker Mitch Altman has created an Arduino-based synth project called Ardutouch, built on a fantastic library by himself and Bill Alessi. The library by itself is great to mess around with, although it may require an experienced Arduino user. [cornfieldelectronics.com/cfe/projects.php](http://www.cornfieldelectronics.com/cfe/projects.php){:target="_blank"}
+- **Teensy Audio Board**: This hardware for the Teensy 3.1/3.2 and the accompanying audio library get an honourable mention simply because it’s so fully featured. Not strictly Arduino, but Arduino-like. [pjrc.com/teensy/td_libs_Audio.html](https://www.pjrc.com/teensy/td_libs_Audio.html){:target="_blank"}
+- There are many more useful libraries in the ‘Audio’ section of the [Arduino library list](http://playground.arduino.cc/Main/LibraryList){:target="_blank"}.
  
 --- /collapse ---

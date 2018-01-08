@@ -1,6 +1,6 @@
 
 ## More control
-So perhaps you’ve played that for a while and become bored already. This was bound to happen – it’s only a simple synthesizer. Let’s try adding another sine wave oscillator, and another potentiometer to control it. To add another potentiometer, you can repeat the connection pattern as before, with our middle wiper pin wired to A2 on the Arduino. 
+So perhaps you’ve played that for a while and become bored already. This was bound to happen — it’s only a simple synthesizer. Let’s try adding another sine wave oscillator, and another potentiometer to control it. To add another potentiometer, you can repeat the connection pattern as before, with our middle wiper pin wired to A2 on the Arduino. 
 
 ![final schematic](images/schematic.png)
 
@@ -24,7 +24,7 @@ int pot0,pot1,pot2;
 int frequency1,frequency2,volume; 
 ```
 
-Our updateControl() function will become: 
+Our `updateControl()` function will become: 
 
 ```
 pot0=mozziAnalogRead(A0); 
@@ -37,7 +37,7 @@ aSin1.setFreq(frequency1);
 aSin2.setFreq(frequency2); 
 ```
 
-And our updateAudio() code will be changed also: 
+And our `updateAudio()` code will be changed also: 
 
 ```
 return volume*((aSin1.next()+aSin2.next())>>1)>>8;
@@ -45,7 +45,7 @@ return volume*((aSin1.next()+aSin2.next())>>1)>>8;
 
 Our two sine waves, when added together, could add up to a number higher than our PWM output can reproduce. In audio circles this is called ‘clipping’ and is generally avoided (unless you’re intentionally after a distorted sound). We’ve prevented this here by dividing the output by two. 
 
-The above changes should result in two controllable sine waves on pots 0 and 1. You may even be able to get some interesting ‘throbbing’ if you pitch the notes close together – this is called ‘beating’ and is caused by interference between the two frequencies. 
+The above changes should result in two controllable sine waves on pots 0 and 1. You may even be able to get some interesting ‘throbbing’ if you pitch the notes close together – this is called ‘beating’, and is caused by interference between the two frequencies. 
 
 To develop the synth further, we’ll introduce frequency modulation (FM). This means we’ll use the output of one sine wave to control the frequency of another, resulting in varied timbres. 
 
@@ -53,13 +53,13 @@ We’ll also be making some changes to our hardware: adding another potentiomete
 
 If you make these changes to the circuit, and upload the code from [from here](resources/Issue1-synth-Code.zip), you should have yourself an FM synthesizer!
 
-The magic happens in two lines. This one, in updateControl(): 
+The magic happens in two lines. This one, in `updateControl()`: 
 
 ```
 aSin2.setFreq(frequency2); 
 ```
 
-And this line, in updateAudio(): 
+And this line, in `updateAudio()`: 
 
 ```
 aSin1.setFreq(frequency1+(amount*(aSin2. next())>>8)); 
@@ -73,9 +73,9 @@ So, you should have a basic 8-bit synthesizer, but more importantly, an idea of 
 ---
 title: Other Arduino audio projects
 ---
-* **ElectroSmash PedalShield**: This is a kit designed to sit on top of an Arduino Due and turn it into a general-purpose guitar effects pedal. It has some basic examples available, and a forum with many more. Electrosmash.com/pedalshield
-* **Ardutouch**: International hacker Mitch Altman has created an Arduino-based synth project called Ardutouch, built on a fantastic library by himself and Bill Alessi. The library by itself is great to mess around with, although it may require an experienced Arduino user. cornfieldelectronics.com/cfe/projects.php
-* **Teensy Audio Board**: This hardware for the Teensy 3.1/3.2 and the accompanying audio library get an honourable mention simply because it’s so fully featured. Not strictly Arduino, but Arduino-like. pjrc.com/teensy/td_libs_Audio.html
-* There are many more useful libraries in the Arduino Library List ( <http://playground.arduino.cc/Main/LibraryList> ) under the ‘audio’ section.
+- **ElectroSmash PedalShield**: This is a kit designed to sit on top of an Arduino Due and turn it into a general-purpose guitar effects pedal. It has some basic examples available, and a forum with many more. [electrosmash.com/pedalshield](https://www.electrosmash.com/pedalshield){:target="_blank"}
+- **Ardutouch**: International hacker Mitch Altman has created an Arduino-based synth project called Ardutouch, built on a fantastic library by himself and Bill Alessi. The library by itself is great to mess around with, although it may require an experienced Arduino user. [cornfieldelectronics.com/cfe/projects.php](http://www.cornfieldelectronics.com/cfe/projects.php){:target="_blank"}
+- **Teensy Audio Board**: This hardware for the Teensy 3.1/3.2 and the accompanying audio library get an honourable mention simply because it’s so fully featured. Not strictly Arduino, but Arduino-like. [pjrc.com/teensy/td_libs_Audio.html](https://www.pjrc.com/teensy/td_libs_Audio.html){:target="_blank"}
+- There are many more useful libraries in the ‘Audio’ section of the [Arduino library list](http://playground.arduino.cc/Main/LibraryList){:target="_blank"}.
  
 --- /collapse ---

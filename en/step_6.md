@@ -79,3 +79,5 @@ title: Other Arduino audio projects
 - There are many more useful libraries in the ‘Audio’ section of the [Arduino library list](http://playground.arduino.cc/Main/LibraryList){:target="_blank"}.
  
 --- /collapse ---
+
+**This tutorial comes from HackSpace magazine issue 1. For more great articles about making head to [https://hackspace.raspberrypi.org](https://hackspace.raspberrypi.org) to download the latest issue or subscribe to the print edition.**

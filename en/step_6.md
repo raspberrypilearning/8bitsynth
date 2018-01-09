@@ -80,4 +80,4 @@ title: Other Arduino audio projects
  
 --- /collapse ---
 
-This tutorial comes from HackSpace magazine issue 1. Head to [https://hackspace.raspberrypi.org](https://hackspace.raspberrypi.org) to download the latest issue or subscribe to the print edition.
+**This tutorial comes from HackSpace magazine issue 1. For more great articles about making head to [https://hackspace.raspberrypi.org](https://hackspace.raspberrypi.org) to download the latest issue or subscribe to the print edition.**

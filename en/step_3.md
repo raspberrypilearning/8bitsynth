@@ -9,7 +9,7 @@ Here you’ll see the basics of a Mozzi program, and you might notice it has a s
 
 If all’s well, you should hear a sine wave at 440 Hz. If you have no sound, check your volume, connections, and that the sketch has uploaded successfully. If you’ve had some success, we’d recommend at this point that you take a look at some of the other examples the Mozzi library has to offer. This will give you an idea of what it’s capable of, but bear in mind that some examples expect extra hardware.
 
-![Connections](images/basicconnection.svg)
+![Connections](images/basicconnection.png)
 
 ## Digital to Analogue with PWM
 
@@ -17,6 +17,6 @@ You might have realised that we are using pin 9, a digital pin, to do the job of
 
 PWM is most commonly used for making lights (particularly LEDs) appear at different brightnesses or motors run at different speeds, all by switching a constant voltage on or off. This approach does have significant downsides, though — mainly that it will introduce a lot of noise at your modulation frequency. Not a problem for motors or LEDs, but your ears will probably notice straight away.
 
-![PWM](images/PWM.svg)
+![PWM](images/PWM.png)
 
 

@@ -7,16 +7,14 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum:
+curriculum: 
 interests: ''
 technologies: ''
 site_areas: HackSpace
 steps:
 - title: Introduction
 - title: What you will need
-  completion: engaged
 - title: Sine wave
 - title: How it works
 - title: Making adjustments
-  completion: internal
 - title: More control
